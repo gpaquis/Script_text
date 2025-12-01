@@ -1,0 +1,15 @@
+[Unit]
+Description=VM to SONiC VLAN mapper daemon
+After=network-online.target
+
+[Service]
+Type=simple
+User=svc-netops
+WorkingDirectory=/opt/vm-sonic-daemon
+ExecStart=/usr/bin/python3 /opt/vm-sonic-daemon/vm_sonic_daemon.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

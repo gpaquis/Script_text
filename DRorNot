@@ -1,0 +1,2 @@
+python3 vm_sonic_daemon.py --dry-run
+python3 vm_sonic_daemon.py

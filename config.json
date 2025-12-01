@@ -1,0 +1,12 @@
+{
+  "reconcile_interval": 300,
+  "dry_run": false,
+  "vcenters": [
+    { "host": "vcenter-a.local", "user": "administrator@vsphere.local", "password": "********" },
+    { "host": "vcenter-b.local", "user": "administrator@vsphere.local", "password": "********" }
+  ],
+  "sonic_devices": [
+    { "host": "10.0.0.10", "user": "admin", "password": "********" },
+    { "host": "10.0.0.11", "user": "admin", "password": "********" }
+  ]
+}
